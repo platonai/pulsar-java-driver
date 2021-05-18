@@ -4,6 +4,8 @@ Java driver for pulsar
 
 Turn the Web into tables and charts using simple SQLs.
 
+[中文文档](README.zh.md)
+
 ## X-SQL
 
 The [very first demo](src/main/java/ai/platon/pulsar/demo/News.java) is to scrape a set of webpages using just one SQL:
