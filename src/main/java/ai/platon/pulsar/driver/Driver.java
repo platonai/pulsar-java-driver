@@ -104,6 +104,10 @@ public class Driver implements AutoCloseable {
     }
 
     public List<String> deserializeArray(String serializedArray) {
+        if (serializedArray == null || serializedArray.isBlank()) {
+            return Collections.emptyList();
+        }
+
         List<String> links = List.of();
 
         String str = serializedArray.replace("(", "").replace(")", "");
@@ -171,7 +175,7 @@ public class Driver implements AutoCloseable {
     }
 
     private String submitTask(String sql) {
-        ScrapeRequest requestEntity = new ScrapeRequest(authToken, sql, null, "HIGHER2");
+        ScrapeRequest requestEntity = new ScrapeRequest(authToken, sql, "HIGHER2");
         HttpRequest request = post(scrapeService, requestEntity);
         try {
             return httpClient.send(request, HttpResponse.BodyHandlers.ofString()).body();

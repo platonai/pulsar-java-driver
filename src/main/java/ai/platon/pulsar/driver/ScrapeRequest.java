@@ -3,13 +3,11 @@ package ai.platon.pulsar.driver;
 public class ScrapeRequest {
     private String authToken;
     private String sql;
-    private String callbackUrl;
     private String priority = "HIGHER2";
 
-    public ScrapeRequest(String authToken, String sql, String callbackUrl, String priority) {
+    public ScrapeRequest(String authToken, String sql, String priority) {
         this.authToken = authToken;
         this.sql = sql;
-        this.callbackUrl = callbackUrl;
         this.priority = priority;
     }
 
@@ -27,14 +25,6 @@ public class ScrapeRequest {
 
     public void setSql(String sql) {
         this.sql = sql;
-    }
-
-    public String getCallbackUrl() {
-        return callbackUrl;
-    }
-
-    public void setCallbackUrl(String callbackUrl) {
-        this.callbackUrl = callbackUrl;
     }
 
     public String getPriority() {
