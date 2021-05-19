@@ -17,7 +17,7 @@ public class News3 {
 
     public static void main(String[] args) throws InterruptedException, TimeoutException, ExecutionException {
         // 1. Create a driver
-        Driver driver = new Driver("platonic.fun", "tang007-1-1f0962d6717527968794596ffc1b5f56");
+        Driver driver = new Driver("platonic.fun", "VQEudzEk-1-b5758d504780b7c42f43531a3a2da269");
 
         // 2. Extract out links from a portal page
         String portalSQL =
@@ -33,7 +33,9 @@ public class News3 {
         Set<String> links = Set.of();
         if (resultSet != null && !resultSet.isEmpty()) {
             String linksString = resultSet.get(0).get("links").toString();
-            links = new HashSet<>(driver.deserializeArray(linksString));
+            links = driver.deserializeArray(linksString).stream()
+                    .filter(link -> link.contains("zcwj"))
+                    .collect(Collectors.toSet());
         }
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();

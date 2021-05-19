@@ -7,13 +7,18 @@ import com.google.gson.GsonBuilder;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
+import java.util.stream.Collectors;
 
 public class News2 {
 
     public static void main(String[] args) throws InterruptedException, TimeoutException, ExecutionException {
-        NewsCrawler crawler = new NewsCrawler("platonic.fun", "tang007-1-1f0962d6717527968794596ffc1b5f56");
+        NewsCrawler crawler = new NewsCrawler("platonic.fun", "VQEudzEk-1-b5758d504780b7c42f43531a3a2da269");
 
-        List<String> links = crawler.collectOutLinks("http://gxt.jl.gov.cn/xxgk/zcwj/", "-expires 7d", "#content ul li a");
+        List<String> links = crawler
+                .collectOutLinks("http://gxt.jl.gov.cn/xxgk/zcwj/", "-expires 7d", "#content ul li a")
+                .stream()
+                .filter(link -> link.contains("zcwj"))
+                .collect(Collectors.toList());
         System.out.println(String.join("\n", links));
 
         // Extract fields from news pages
