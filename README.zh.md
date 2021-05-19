@@ -4,6 +4,12 @@ Pulsar 的 java 驱动说明
 
 使用简单的 SQL 将互联网转变为表格和图表.
 
+## 新闻采集案例
+
+查看 [新闻采集案例](src/main/resources/requests/requests.news.http) 了解如何用简单的 X-SQL 来采集各类新闻。
+
+查看 [新闻采集 Java 演示](src/main/java/ai/platon/pulsar/demo) 了解更多使用 Java 语言来采集新闻内容。
+
 ## X-SQL
 
 [第一个演示](src/main/java/ai/platon/pulsar/demo/News.java) 是仅使用一个 SQL 抓取一组网页：
@@ -46,8 +52,6 @@ Pulsar 的 java 驱动说明
 所有用户自定义 SQL 函数可以在 [这里](https://github.com/platonai/pulsar/tree/master/pulsar-ql/src/main/kotlin/ai/platon/pulsar/ql/h2/udfs) 找到。
 
 查看 [演示](src/main/java/ai/platon/pulsar/demo) 了解更多。
-
-查看 [新闻采集案例](src/main/resources/requests/requests.news.http) 了解更多新闻采集案例。
 
 查看 [Amazon 完整数据模型](https://github.com/platonai/pulsar/blob/master/pulsar-app/pulsar-sites-support/pulsar-site-amazon/src/main/resources/config/sites/amazon/crawl/parse/sql/crawl) 了解更多 X-SQL 用法。
 
