@@ -46,3 +46,19 @@ Pulsar 的 java 驱动说明
 所有用户自定义 SQL 函数可以在 [这里](https://github.com/platonai/pulsar/tree/master/pulsar-ql/src/main/kotlin/ai/platon/pulsar/ql/h2/udfs) 找到。
 
 查看 [演示](src/main/java/ai/platon/pulsar/demo) 了解更多。
+查看 [Amazon 完整数据模型](https://github.com/platonai/pulsar/blob/master/pulsar-app/pulsar-sites-support/pulsar-site-amazon/src/main/resources/config/sites/amazon/crawl/parse/sql) 了解更多 X-SQL 用法.
+
+## 数据处理函数
+以下是最常用的数据抓取函数：
+    
+    load_and_select                   # load a page and do something on the DOM
+    load_out_pages                    # load a portal page, extract out links, load the out pages and do things on the DOM for each out page
+    news_load_and_extract             # load a news page, automatically extract the news content using the famous boilerpile algorithm, and we also can manually extract fields from the page
+
+以下是最常用的 DOM 操作函数：
+
+    dom_(uri, base_uri, text, ...)     # query a attribute of the DOM element
+    dom_first_(text, attr, href, ...)  # query a attribute of the first matching DOM element
+    dom_all_(text, attr, href, ...)    # query a attribute of the all matching DOM elements
+
+另外，我们提供了大量功能函数，如字符串函数，时间日期函数等。
