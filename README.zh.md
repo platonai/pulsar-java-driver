@@ -46,7 +46,7 @@ Pulsar 的 java 驱动说明
 所有用户自定义 SQL 函数可以在 [这里](https://github.com/platonai/pulsar/tree/master/pulsar-ql/src/main/kotlin/ai/platon/pulsar/ql/h2/udfs) 找到。
 
 查看 [演示](src/main/java/ai/platon/pulsar/demo) 了解更多。
-查看 [Amazon 完整数据模型](https://github.com/platonai/pulsar/blob/master/pulsar-app/pulsar-sites-support/pulsar-site-amazon/src/main/resources/config/sites/amazon/crawl/parse/sql) 了解更多 X-SQL 用法.
+查看 [Amazon 完整数据模型](https://github.com/platonai/pulsar/blob/master/pulsar-app/pulsar-sites-support/pulsar-site-amazon/src/main/resources/config/sites/amazon/crawl/parse/sql/crawl) 了解更多 X-SQL 用法.
 
 ## 数据处理函数
 以下是最常用的数据抓取函数：
