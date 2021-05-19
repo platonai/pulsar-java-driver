@@ -49,7 +49,7 @@ Pulsar 的 java 驱动说明
 
 查看 [新闻采集案例](src/main/resources/requests/requests.news.http) 了解更多新闻采集案例。
 
-查看 [Amazon 完整数据模型](https://github.com/platoni/pulsar/blob/master/pulsar-app/pulsar-sites-support/pulsar-site-amazon/src/main/resources/config/sites/amazon/crawl/parse/sql/crawl) 了解更多 X-SQL 用法。
+查看 [Amazon 完整数据模型](https://github.com/platonai/pulsar/blob/master/pulsar-app/pulsar-sites-support/pulsar-site-amazon/src/main/resources/config/sites/amazon/crawl/parse/sql/crawl) 了解更多 X-SQL 用法。
 
 ## 数据处理函数
 以下是最常用的数据抓取函数：
@@ -65,3 +65,5 @@ Pulsar 的 java 驱动说明
     dom_all_(text, attr, href, ...)    # query a attribute of the all matching DOM elements
 
 另外，我们提供了大量功能函数，如字符串函数，时间日期函数等。
+
+这是一个非常好的[现实案例](https://github.com/platonai/pulsar/blob/master/pulsar-app/pulsar-sites-support/pulsar-site-amazon/src/main/resources/config/sites/amazon/crawl/parse/sql/crawl/x-asin.sql)，用来将亚马逊产品页结构化。
