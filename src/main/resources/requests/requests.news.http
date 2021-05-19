@@ -1,7 +1,7 @@
 ###
 # 北京市经济和信息化委员会-经信动态-政务要闻
 # http://jxj.beijing.gov.cn/jxdt/zwyw/
-POST http://platonic.fun:8182/x/e
+POST http://platonic.fun:8182/api/api/x/e
 Content-Type: text/plain
 
 select
@@ -17,7 +17,7 @@ from
 ###
 # 北京市经济和信息化委员会-经信动态-通知公告
 # http://jxj.beijing.gov.cn/jxdt/tzgg/
-POST http://platonic.fun:8182/x/e
+POST http://platonic.fun:8182/api/x/e
 Content-Type: text/plain
 
 select
@@ -33,7 +33,7 @@ from
 ###
 # 北京市经济和信息化委员会-政策·解读-政策文件-北京市政策
 # http://jxj.beijing.gov.cn/zwgk/zcjd/
-POST http://platonic.fun:8182/x/e
+POST http://platonic.fun:8182/api/x/e
 Content-Type: text/plain
 
 select
@@ -49,7 +49,7 @@ from
 ###
 # 北京市经济和信息化委员会-经信动态-行业动态
 # http://jxj.beijing.gov.cn/jxdt/gzdt/
-POST http://platonic.fun:8182/x/e
+POST http://platonic.fun:8182/api/x/e
 Content-Type: text/plain
 
 select
@@ -65,7 +65,7 @@ from
 ###
 # 天津市工业和信息化委员会-最新信息-最新信息
 # http://gyxxh.tj.gov.cn/ZWXX5652/TZGG644/2021n/
-POST http://platonic.fun:8182/x/e
+POST http://platonic.fun:8182/api/x/e
 Content-Type: text/plain
 
 select
@@ -81,7 +81,7 @@ from
 ###
 # 天津市工业和信息化委员会-最新信息-工作动态
 # http://gyxxh.tj.gov.cn/ZWXX5652/GXDT9285/
-POST http://platonic.fun:8182/x/e
+POST http://platonic.fun:8182/api/x/e
 Content-Type: text/plain
 
 select
@@ -97,7 +97,7 @@ from
 ###
 # 天津市工业和信息化委员会-政务公开-通知公告
 # http://gyxxh.tj.gov.cn/ZWXX5652/TZGG644/2021n/
-POST http://platonic.fun:8182/x/e
+POST http://platonic.fun:8182/api/x/e
 Content-Type: text/plain
 
 select
@@ -113,7 +113,7 @@ from
 ###
 # 天津市工业和信息化委员会-政务公开-政策文件
 # http://gyxxh.tj.gov.cn/ZWGK4147/ZCWJ6355/gjjwj/
-POST http://platonic.fun:8182/x/e
+POST http://platonic.fun:8182/api/x/e
 Content-Type: text/plain
 
 select
